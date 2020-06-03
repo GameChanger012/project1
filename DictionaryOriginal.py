@@ -21,14 +21,14 @@ def find(word):
         else:
             return("wrong input please enter just y or n")
     else:
-        print("You have entered wrong input")
+        print(" wrong input")
 
 
 
-word = input("Enter the word you want to search")
-output = find(word)
-if type(output) == list:
-    for item in output:
+word = input("Type the word you wish to search here: ")
+result = find(word)
+if type(result) == list:
+    for item in result:
         print(item)
 else:
-    print(output)
+    print(result)
